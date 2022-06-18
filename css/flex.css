@@ -6,9 +6,9 @@
 
 body {
     background-color: hsl(0, 0%, 95%);
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Lexend Deca', sans-serif;
-    max-width: 1440px;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Lexend Deca", sans-serif;
+    /* max-width: 1440px; */
 }
 
 /* CSS Body */
@@ -21,7 +21,7 @@ body {
 /* CSS Body */
 
 main {
-    width: 70%;
+    max-width: 60em;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
@@ -32,11 +32,12 @@ main {
 
 /* CSS Typography */
 
-h1, a {
-    color:hsl(0, 0%, 95%);
+h1,
+a {
+    color: hsl(0, 0%, 95%);
 }
 
-p{
+p {
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
     font-weight: 400;
@@ -44,21 +45,20 @@ p{
 
 /* CSS Section */
 
-
 section {
     padding: 50px;
     background-color: rebeccapurple;
 }
 
-section > h1 {
+section>h1 {
     margin: 30px 0;
     padding: 0;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: "Big Shoulders Display", cursive;
     font-weight: 700;
     font-size: 2.45em;
 }
 
-section > p {
+section>p {
     line-height: 24px;
     margin-bottom: 100px;
 }
@@ -69,7 +69,6 @@ a {
     padding: 12px 20px 12px 20px;
     border: 1.5px solid hsl(0, 0%, 95%);
     border-radius: 50px;
-    position: relative;
 }
 
 #left {
@@ -78,9 +77,11 @@ a {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+
 #middle {
     background-color: hsl(184, 100%, 22%);
 }
+
 #right {
     background-color: hsl(179, 100%, 13%);
     /* border: 0px solid hsl(0, 0%, 95%); */
@@ -88,15 +89,27 @@ a {
     border-bottom-right-radius: 10px;
 }
 
-#left > a:hover {
+#left>a:hover {
     background-color: hsl(0, 0%, 95%);
-    color:hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
 }
-#middle > a:hover {
+
+#middle>a:hover {
     background-color: hsl(0, 0%, 95%);
     color: hsl(184, 100%, 22%);
 }
-#right > a:hover {
+
+#right>a:hover {
     background-color: hsl(0, 0%, 95%);
     color: hsl(179, 100%, 13%);
+}
+
+.grid {
+    background-color: hsl(31, 77%, 52%);
+    padding: 12px 200px;
+    margin-left: 33%;
+}
+
+.grid:hover {
+    background-color: hsl(184, 100%, 22%);
 }

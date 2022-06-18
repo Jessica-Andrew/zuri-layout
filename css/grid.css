@@ -1,14 +1,14 @@
 /* CSS Document */
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body {
     background-color: hsl(0, 0%, 95%);
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deca', sans-serif;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 /* CSS Body */
@@ -18,86 +18,57 @@ body {
     padding: 0;
 }
 
-/* CSS Body */
+/* CSS Grid */
 
-main {
-    width: 70%;
-    margin: auto;
+.grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 0px;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
+    grid-template-areas:
+        'a a a a b b'
+        'c c c d d d'
+        'c c c e e e';
+    height: 70vh;
+    max-width: 60em;
+    margin: 10vh auto;
 }
 
-/* CSS Typography */
-
-h1, a {
-    color:hsl(0, 0%, 95%);
+.a {
+    background-color: #dad7cd;
+    grid-area: a;
 }
 
-p{
-    color: hsla(0, 0%, 100%, 0.75);
-    font-size: 15px;
-    font-weight: 400;
+.b {
+    background-color: #a3b18a;
+    grid-area: b;
 }
 
-/* CSS Section */
-
-
-section {
-    padding: 50px;
-    background-color: rebeccapurple;
+.c {
+    background-color: #588157;
+    grid-area: c;
 }
 
-section > h1 {
-    margin: 30px 0;
-    padding: 0;
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: 700;
-    font-size: 2.45em;
+.d {
+    background-color: #3a5a40;
+    grid-area: d;
 }
 
-section > p {
-    line-height: 24px;
-    margin-bottom: 100px;
+.e {
+    background-color: #344e41;
+    grid-area: e;
 }
 
-a {
-    margin: 0;
+/* CSS Button */
+
+.flex {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    padding: 12px 200px;
+    margin-left: 33%;
     text-decoration: none;
-    padding: 12px 20px 12px 20px;
     border: 1.5px solid hsl(0, 0%, 95%);
     border-radius: 50px;
-    position: relative;
 }
 
-#left {
+.flex:hover {
     background-color: hsl(31, 77%, 52%);
-    /* border: 0px solid hsl(0, 0%, 95%); */
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-#middle {
-    background-color: hsl(184, 100%, 22%);
-}
-#right {
-    background-color: hsl(179, 100%, 13%);
-    /* border: 0px solid hsl(0, 0%, 95%); */
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#left > a:hover {
-    background-color: hsl(0, 0%, 95%);
-    color:hsl(31, 77%, 52%);
-}
-#middle > a:hover {
-    background-color: hsl(0, 0%, 95%);
-    color: hsl(184, 100%, 22%);
-}
-#right > a:hover {
-    background-color: hsl(0, 0%, 95%);
-    color: hsl(179, 100%, 13%);
 }
